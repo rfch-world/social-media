@@ -16,6 +16,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2KbQKTPYUv9AnPxAELvlo2qYsEj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -69,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674240738874</updated>
-      <workItem from="1674240744283" duration="1790000" />
+      <workItem from="1674240744283" duration="2171000" />
     </task>
     <servers />
   </component>
