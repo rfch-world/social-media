@@ -1,4 +1,7 @@
 package world.rfch.entity;
 
-public class User {
+import javax.persistence.Entity;
+
+@Entity
+public class User extends BaseEntity {
 }
