@@ -2,13 +2,17 @@ package world.rfch.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
+
+@Data
 @Entity
 @Table(name = "friendship")
-@Data
 public class Friendship extends BaseEntity {
-    private Long user_id;
-    private Long friend_id;
+    @ManyToMany
+    @JoinTable(name = "user_id")
+    private UserEntity user;
+    @ManyToMany
+    @JoinTable(name = "friend_id")
+    private UserEntity friend;
 }
