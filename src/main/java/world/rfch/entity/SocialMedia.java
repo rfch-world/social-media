@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Data
 @Table(name = "social_media")
-public class Social_Media extends BaseEntity {
+public class SocialMedia extends BaseEntity {
     private Long user_id;
     private String url;
 }

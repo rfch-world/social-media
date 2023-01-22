@@ -4,15 +4,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Data
 @Entity
 @NoArgsConstructor
 @Table(name = "marital_status")
-public class Marital_Status extends BaseEntity {
+public class MaritalStatus extends BaseEntity {
 
-    @OneToOne(mappedBy = "user")
-    private UserEntity id;
-    private char status;
+    @OneToMany(mappedBy = "user")
+    private List<User> user;
+    private String status;
 }
