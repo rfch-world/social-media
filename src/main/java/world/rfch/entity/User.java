@@ -1,5 +1,7 @@
 package world.rfch.entity;
 
+import javafx.geometry.Pos;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +12,7 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "user")
 public class User extends BaseEntity {
     @Column(name = "username")
@@ -30,11 +33,11 @@ public class User extends BaseEntity {
     private char gender;
     @Column(name = "date_of_birth")
     private Date date_of_birth;
-    //---
+
     @ManyToOne
     @JoinColumn(name = "marital_status_id")
     private MaritalStatus maritalStatus;
-    //---
+
     @Column(name = "address")
     private String address;
     @Column(name = "contact_number")
@@ -55,6 +58,7 @@ public class User extends BaseEntity {
     private String image;
     @ManyToMany(mappedBy = "followerUserList")
     private List<User> followUserList;
+
     @ManyToMany(mappedBy = "followUserList")
     @JoinTable(
             name = "follow",
@@ -69,5 +73,44 @@ public class User extends BaseEntity {
     @OneToMany
     @JoinColumn(name = "received_messages")
     private List<Message> receivedMessages;
+
+    @ManyToMany
+    @JoinTable(
+            name = "friendship",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "friend_id"))
+    private List<User> friendship;
+
+    @ManyToMany
+    @JoinTable(
+            name = "friend_request",
+            joinColumns = @JoinColumn(name = "sender_id"),
+            inverseJoinColumns = @JoinColumn(name = "receiver_id"))
+    private List<User> friendRequest;
+
+    @ManyToMany
+    @JoinTable(
+            name = "friend_list",
+            joinColumns = @JoinColumn(name = "sender_id"),
+            inverseJoinColumns = @JoinColumn(name = "receiver_id"))
+    private List<User> friendList;
+
+    @ManyToMany
+    @JoinTable(
+            name = "friend_list",
+            joinColumns = @JoinColumn(name = "sender_id"),
+            inverseJoinColumns = @JoinColumn(name = "receiver_id"))
+    private List<User> sendedFriendRequests;
+
+    @ManyToMany
+    @JoinTable(
+            name = "friend_list",
+            joinColumns = @JoinColumn(name = "sender_id"),
+            inverseJoinColumns = @JoinColumn(name = "receiver_id"))
+    private List<User> receivedFriendRequests;
+
+    @OneToMany
+    private List<Post> posts;
+
 
 }
