@@ -1,4 +1,8 @@
 package world.rfch.entity;
 
-public class PostStatus {
+public enum PostStatus {
+    PUBLIC,
+    PRIVATE,
+    ONLY_FRIENDS,
+    SOME_FRIENDS
 }
