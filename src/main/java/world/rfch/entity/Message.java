@@ -20,6 +20,7 @@ public class Message extends BaseEntity {
     @JoinColumn(name = "receiver_id")
     private User userReceiver;
 
+    @Lob
     @Column(name = "text")
     private String text;
 
