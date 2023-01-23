@@ -1,4 +1,4 @@
-package world.rfch.entity;
+package world.rfch.jpa.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,19 +10,19 @@ import java.util.Date;
 @Data
 @Table(name = "message")
 @NoArgsConstructor
-public class Message extends BaseEntity {
+public class MessageEntity extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "sender_id")
-    private User senderUser;
+    private UserEntity senderUser;
 
     @ManyToOne
     @JoinColumn(name = "receiver_id")
-    private User receiverUser;
+    private UserEntity receiverUser;
 
     @Lob
-    @Column(name = "text")
-    private String text;
+    @Column(name = "content")
+    private String content;
 
     @Column(name = "date")
     private Date date;

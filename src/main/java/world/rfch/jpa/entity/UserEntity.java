@@ -1,8 +1,13 @@
-package world.rfch.entity;
+package world.rfch.jpa.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+import world.rfch.enums.Gender;
+import world.rfch.enums.MaritalStatus;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "user")
-public class User extends BaseEntity {
+public class UserEntity extends BaseEntity {
 
     @Column(name = "username")
     private String username;
@@ -37,7 +42,7 @@ public class User extends BaseEntity {
     private String cityName;
 
     @Column(name = "gender")
-    private char gender;
+    private Gender gender;
 
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
@@ -46,6 +51,7 @@ public class User extends BaseEntity {
     @Column(name = "marital_status")
     private MaritalStatus maritalStatus;
 
+    @Lob
     @Column(name = "address")
     private String address;
 
@@ -73,65 +79,82 @@ public class User extends BaseEntity {
     @Column(name = "image")
     private String image;
 
-    @ManyToMany
+    @Column(name = "registration_date")
+    private Date registrationDate;
+
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "follow",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "follower_id"))
-    private List<User> followedUserList;
+    private List<UserEntity> followedUserList;
 
-    @ManyToMany(mappedBy = "followedUserList")
-    private List<User> followerUserList;
+    @ManyToMany(mappedBy = "followedUserList",fetch = FetchType.EAGER)
+    private List<UserEntity> followerUserList;
 
+    @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "senderUser")
-    private List<Message> sentMessages;
+    private List<MessageEntity> sentMessages;
 
+    @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(mappedBy = "receiverUser")
-    private List<Message> receivedMessages;
+    private List<MessageEntity> receivedMessages;
 
     @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "friendship",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "friend_id"))
-    private List<User> friendList;
+    private List<UserEntity> friendList;
 
     @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "friend_request",
             joinColumns = @JoinColumn(name = "sender_id"),
             inverseJoinColumns = @JoinColumn(name = "receiver_id"))
-    private List<User> sentFriendRequests;
+    private List<UserEntity> sentFriendRequests;
 
     @ManyToMany(mappedBy = "sentFriendRequests")
-    private List<User> receivedFriendRequests;
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<UserEntity> receivedFriendRequests;
 
     @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "post_tag",
             joinColumns = @JoinColumn(name = "post_id"),
             inverseJoinColumns = @JoinColumn(name = "tagged_user_id"))
-    private List<Post> postListThatUserIsTaggedIn;
+    private List<PostEntity> postListThatUserIsTaggedIn;
 
     @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "post_like",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "liked_post_id"))
-    private List<Post> likedPostList;
+    private List<PostEntity> likedPostList;
 
     @OneToMany(mappedBy = "user")
-    private List<SocialMedia> socialMediaList;
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<SocialMediaEntity> socialMediaList;
 
     @OneToMany(mappedBy = "user")
-    private List<Comment> commentList;
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<CommentEntity> commentList;
 
     @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
     @JoinTable(
             name = "comment_like",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "comment_id"))
-    private List<Comment> likedCommentList;
+    private List<CommentEntity> likedCommentList;
+
+    @OneToMany(mappedBy = "user")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<PostEntity> postEntityList;
 
 
 

@@ -1,4 +1,4 @@
-package world.rfch.entity;
+package world.rfch.jpa.entity;
 
 import javax.persistence.*;
 

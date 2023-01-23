@@ -1,8 +1,9 @@
-package world.rfch.entity;
+package world.rfch.jpa.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import world.rfch.enums.PostStatus;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,11 +14,11 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "post")
-public class Post extends BaseEntity {
+public class PostEntity extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private UserEntity user;
 
     @Column(name = "content")
     private String content;
@@ -39,11 +40,11 @@ public class Post extends BaseEntity {
     private Integer likeCount;
 
     @ManyToMany(mappedBy = "postListThatUserIsTaggedIn")
-    private List<User> taggedUserList;
+    private List<UserEntity> taggedUserList;
 
     @ManyToMany(mappedBy = "likedPostList")
-    private List<User> likedUserList;
+    private List<UserEntity> likedUserList;
 
     @OneToMany(mappedBy = "post")
-    private List<Comment> commentList;
+    private List<CommentEntity> commentList;
 }

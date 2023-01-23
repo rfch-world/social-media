@@ -1,4 +1,4 @@
-package world.rfch.entity;
+package world.rfch.enums;
 
 import lombok.AllArgsConstructor;
 

@@ -1,4 +1,4 @@
-package world.rfch.entity;
+package world.rfch.jpa.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,26 +13,33 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "comment")
-public class Comment extends BaseEntity {
+public class CommentEntity extends BaseEntity {
 
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "context")
-    private String context;
+    @Column(name = "content")
+    private String content;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private UserEntity user;
 
     @ManyToOne
     @JoinColumn(name = "post_id")
-    private Post post;
+    private PostEntity post;
 
     @Column(name = "date")
     private Date date;
 
     @ManyToMany(mappedBy = "likedCommentList")
-    private List<User> likedUserList;
+    private List<UserEntity> likedUserList;
+
+    @ManyToOne
+    @JoinColumn(name = "comment_id")
+    private CommentEntity repliedComment;
+
+    @OneToMany(mappedBy = "repliedComment")
+    private List<CommentEntity> replyListOfComment;
 
 }
