@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Friend_Request.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Friendship.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Marital_Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/MaritalStatus.java" afterDir="false" />
+    <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="initial commiy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/PostStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Social_Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/SocialMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="BaseEntity" />
+    <MESSAGE value="initial commiy" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commiy" />
   </component>
 </project>
