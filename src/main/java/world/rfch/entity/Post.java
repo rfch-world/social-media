@@ -18,23 +18,32 @@ public class Post extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @Column(name = "content")
     private String content;
+
+    @Column(name = "date")
     private Date date;
-    private String image;
-    private String video;
-    private PostStatus;
 
-    @OneToMany
-    @JoinTable(
-            name = "post_tag",
-            joinColumns = @JoinColumn(name = "post_id"),
-            inverseJoinColumns = @JoinColumn(name = "tagged_user_id"))
-    private List<Post> postTag;
+    @Column(name = "source")
+    private String source;
 
-    @OneToMany
-    @JoinTable(
-            name = "post_like",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "liked_post_id"))
-    private List<Post> postLike;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "post_status")
+    private PostStatus status;
+
+    @Column(name = "comment_count")
+    private Integer commentCount;
+
+    @Column(name = "like_count")
+    private Integer likeCount;
+
+    @ManyToMany(mappedBy = "postListThatUserIsTaggedIn")
+    private List<User> taggedUserList;
+
+    @ManyToMany(mappedBy = "likedPostList")
+    private List<User> likedUserList;
+
+    @OneToMany(mappedBy = "post")
+    private List<Comment> commentList;
 }

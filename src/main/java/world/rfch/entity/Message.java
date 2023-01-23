@@ -8,17 +8,17 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "messasge")
+@Table(name = "message")
 @NoArgsConstructor
 public class Message extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "sender_id")
-    private User userSender;
+    private User senderUser;
 
     @ManyToOne
     @JoinColumn(name = "receiver_id")
-    private User userReceiver;
+    private User receiverUser;
 
     @Lob
     @Column(name = "text")

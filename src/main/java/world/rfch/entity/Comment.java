@@ -14,6 +14,11 @@ import java.util.List;
 @AllArgsConstructor
 @Table(name = "comment")
 public class Comment extends BaseEntity {
+
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "context")
     private String context;
 
     @ManyToOne
@@ -24,14 +29,10 @@ public class Comment extends BaseEntity {
     @JoinColumn(name = "post_id")
     private Post post;
 
-    //comment-id qalib
-
+    @Column(name = "date")
     private Date date;
-    @OneToMany
-    @JoinTable(
-            name = "comment_like",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "comment_id"))
-    private List<User> commentLikes;
+
+    @ManyToMany(mappedBy = "likedCommentList")
+    private List<User> likedUserList;
 
 }
