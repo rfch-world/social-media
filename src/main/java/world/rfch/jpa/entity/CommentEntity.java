@@ -21,6 +21,9 @@ public class CommentEntity extends BaseEntity {
     @Column(name = "content")
     private String content;
 
+    @Column(name="like_count")
+    private Integer likeCount;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserEntity user;
@@ -41,5 +44,6 @@ public class CommentEntity extends BaseEntity {
 
     @OneToMany(mappedBy = "repliedComment")
     private List<CommentEntity> replyListOfComment;
+
 
 }
