@@ -15,9 +15,6 @@ import java.util.List;
 @Table(name = "comment")
 public class CommentEntity extends BaseEntity {
 
-    @Column(name = "id")
-    private Long id;
-
     @Column(name = "content")
     private String content;
 

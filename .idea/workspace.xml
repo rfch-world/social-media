@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/SocialMediaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
