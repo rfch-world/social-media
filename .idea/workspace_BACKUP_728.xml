@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/SocialMediaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" afterDir="false" />
+    <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="initial commiy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/PostStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/entity/User.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +19,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,32 +27,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2KbQKTPYUv9AnPxAELvlo2qYsEj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+<<<<<<< HEAD
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+>>>>>>> 932980c59cae47cfdea798f443654d811351569c
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="SocialMediaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -78,6 +71,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -89,12 +83,24 @@
       <option name="presentableId" value="Default" />
       <updated>1674240738874</updated>
       <workItem from="1674240744283" duration="2171000" />
-      <workItem from="1674540593955" duration="4947000" />
+      <workItem from="1674323334498" duration="6952000" />
+      <workItem from="1674331175312" duration="11000" />
+      <workItem from="1674375241773" duration="2535000" />
+      <workItem from="1674393394215" duration="5474000" />
+      <workItem from="1674407754459" duration="5818000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1674326861117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674326861117</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -106,8 +112,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="BaseEntity" />
+    <MESSAGE value="initial commiy" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commiy" />
   </component>
 </project>
