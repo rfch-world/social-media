@@ -13,9 +13,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class SocialMediaEntity extends BaseEntity {
 
-    @Column(name = "id")
-    private Long id;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserEntity user;
