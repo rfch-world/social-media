@@ -1,15 +1,13 @@
-package world.rfch.jpa.repository;
+package world.rfch.service;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import world.rfch.jpa.entity.UserEntity;
 
+import java.util.List;
 import java.util.Optional;
 
-@Repository
-public interface UserRepository extends JpaRepository<UserEntity,Long> {
-
+@Service
+public interface UserService {
     Optional<UserEntity> findUserByNameAndSurname(String name, String surname);
 
     Optional<UserEntity> findUserByName(String name);
@@ -21,9 +19,15 @@ public interface UserRepository extends JpaRepository<UserEntity,Long> {
     Optional<UserEntity> findUserByEmail(String email);
 
     Optional<UserEntity> findUserByUsername(String username);
-    @Query(value="SELECT EXISTS (SELECT 1 FROM friendship) WHERE user_id=:userId AND friend_id =:friendId)",
-            nativeQuery = true)
 
     int isFriend(Long userId,Long friendId);
 
+    UserEntity save(UserEntity user);
+
+    List<UserEntity> findAll();
+
+    UserEntity findById(Long userId);
+
+    void deleteById(Long id);
 }
+
