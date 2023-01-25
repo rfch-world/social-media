@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 import world.rfch.jpa.entity.MessageEntity;
 import world.rfch.jpa.entity.UserEntity;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
@@ -13,3 +14,4 @@ public interface MessageRepository extends JpaRepository<MessageEntity,Long> {
     List<MessageEntity> findAllByReceiverUserAndSenderUserOrderByDateDesc
             (UserEntity senderUser, UserEntity receiverUser);
 }
+
