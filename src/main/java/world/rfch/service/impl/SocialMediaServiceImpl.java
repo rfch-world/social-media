@@ -9,11 +9,10 @@ import world.rfch.service.SocialMediaEntityService;
 
 import java.util.List;
 
-@Service
 @RequiredArgsConstructor
 public class SocialMediaServiceImpl implements SocialMediaEntityService {
-private final SocialMediaRepository socialMediaRepository;
 
+    private final SocialMediaRepository socialMediaRepository;
 
     @Override
     public List<SocialMediaEntity> findAllByUser(UserEntity userEntity) {
@@ -21,12 +20,18 @@ private final SocialMediaRepository socialMediaRepository;
     }
 
     @Override
-    public void saveSocialMedia(SocialMediaEntity socialMediaEntity) {
-        socialMediaRepository.save(socialMediaEntity);
+    public SocialMediaEntity save(SocialMediaEntity socialMediaEntity) {
+        return socialMediaRepository.save(socialMediaEntity);
     }
 
     @Override
-    public void deleteSocialMediaById(Long id) {
+    public void deleteById(Long id) {
 socialMediaRepository.deleteById(id);
+    }
+
+    @Override
+    public SocialMediaEntity findById(Long id) {
+        return socialMediaRepository.findById(id).
+                orElseThrow(()->new RuntimeException("can not find social media with given id"));
     }
 }

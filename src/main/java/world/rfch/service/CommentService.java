@@ -10,11 +10,16 @@ import java.util.List;
 @Service
 public interface CommentService {
     List<CommentEntity> findAllByPostOrderByLikeCount(PostEntity post);
+
     void deleteLike( Long userId,Long commentId);
+
     int isLiked( Long userId,  Long commentId);
+
     void addLike(Long userId,Long commentId);
-    void save(CommentEntity commentEntity);
+
+    CommentEntity save(CommentEntity commentEntity);
+
     void deleteById(Long id);
 
-    CommentEntity getCommentByCommentId(Long commentId);
+    CommentEntity findById(Long commentId);
 }

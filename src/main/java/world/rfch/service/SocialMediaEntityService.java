@@ -9,6 +9,10 @@ import java.util.List;
 @Service
 public interface SocialMediaEntityService {
     List<SocialMediaEntity> findAllByUser(UserEntity userEntity);
-    void saveSocialMedia(SocialMediaEntity socialMediaEntity);
-    void  deleteSocialMediaById(Long id);
+
+    SocialMediaEntity save(SocialMediaEntity socialMediaEntity);
+
+    void  deleteById(Long id);
+
+    SocialMediaEntity findById(Long id);
 }

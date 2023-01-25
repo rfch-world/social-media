@@ -8,17 +8,26 @@ import java.util.Optional;
 
 @Service
 public interface UserService {
-
     Optional<UserEntity> findUserByNameAndSurname(String name, String surname);
+
     Optional<UserEntity> findUserByName(String name);
+
     Optional<UserEntity> findUserBySurname(String surname);
+
     Optional<UserEntity> findUserByNameOrSurname(String name, String surname);
+
     Optional<UserEntity> findUserByEmail(String email);
+
     Optional<UserEntity> findUserByUsername(String username);
+
     int isFriend(Long userId,Long friendId);
-    void userSave(UserEntity user);
-    List<UserEntity> getAllUsers();
+
+    UserEntity save(UserEntity user);
+
+    List<UserEntity> findAll();
+
     UserEntity findById(Long userId);
-    void deleteUserById(Long id);
+
+    void deleteById(Long id);
 }
 

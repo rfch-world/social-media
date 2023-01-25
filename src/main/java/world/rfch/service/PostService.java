@@ -9,14 +9,21 @@ import world.rfch.jpa.entity.PostEntity;
 import java.util.List;
 @Service
 public interface PostService {
-
     List<PostEntity> findAllByOrderByLikeCountDescDate();
+
     List<PostEntity> findAllByStatusOrderByLikeCountDescDate(PostStatus postStatus);
-    void removeLike(Long userId,  Long postId);
+
+    void deleteLike(Long userId,  Long postId);
+
     int isLiked(Long userId, Long postId);
+
     void addLike( Long userId,  Long postId);
-    void save(PostEntity post);
-    void findByPostById(Long postId);
-    void deletePost(PostEntity post);
-     List<PostEntity> getAllPosts();
+
+    PostEntity save(PostEntity post);
+
+    void findById(Long postId);
+
+    void deleteById(Long id);
+
+     List<PostEntity> findAll();
 }

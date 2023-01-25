@@ -9,19 +9,15 @@ import world.rfch.service.UserService;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-
     @Override
     public Optional<UserEntity> findUserByNameAndSurname(String name, String surname) {
-
         return userRepository.findUserByNameAndSurname(name,surname);
     }
-
 
     @Override
     public Optional<UserEntity> findUserByName(String name) {
@@ -54,22 +50,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void userSave(UserEntity user) {
-        userRepository.save(user);
+    public UserEntity save(UserEntity user) {
+        return userRepository.save(user);
     }
 
     @Override
-    public List<UserEntity> getAllUsers() {
+    public List<UserEntity> findAll() {
         return userRepository.findAll();
     }
 
     @Override
     public UserEntity findById(Long userId) {
-        return userRepository.findById(userId).orElseThrow(()->new RuntimeException("can not find user with given id"));
+        return userRepository.findById(userId).
+                orElseThrow(()->new RuntimeException("can not find user with given id"));
     }
 
     @Override
-    public void deleteUserById(Long id) {
+    public void deleteById(Long id) {
         userRepository.deleteById(id);
     }
 }

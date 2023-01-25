@@ -9,9 +9,9 @@ import world.rfch.service.CommentService;
 
 import java.util.List;
 
-@Service
 @RequiredArgsConstructor
 public class CommentServiceImpl implements CommentService {
+
 private final CommentRepository commentRepository;
 
     @Override
@@ -35,8 +35,8 @@ private final CommentRepository commentRepository;
     }
 
     @Override
-    public void save(CommentEntity commentEntity) {
-       commentRepository.save(commentEntity);
+    public CommentEntity save(CommentEntity commentEntity) {
+       return commentRepository.save(commentEntity);
     }
 
     @Override
@@ -46,9 +46,9 @@ commentRepository.deleteById(id);
 
 
     @Override
-    public CommentEntity getCommentByCommentId(Long commentId) {
-     CommentEntity commentEntity=commentRepository.findById(commentId).orElseThrow(()->new RuntimeException(
-             "can not find comment with given commentid"));
+    public CommentEntity findById(Long commentId) {
+     CommentEntity commentEntity=commentRepository.findById(commentId).
+             orElseThrow(()->new RuntimeException("can not find comment with given commentid"));
      return commentEntity;
     }
 

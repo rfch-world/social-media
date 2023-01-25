@@ -8,14 +8,11 @@ import world.rfch.jpa.repository.PostRepository;
 import world.rfch.service.PostService;
 
 import java.util.List;
-@Service
+
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
 
-private final PostRepository postRepository;
-
-
-
+    private final PostRepository postRepository;
 
     @Override
     public List<PostEntity> findAllByOrderByLikeCountDescDate() {
@@ -28,7 +25,7 @@ private final PostRepository postRepository;
     }
 
     @Override
-    public void removeLike(Long userId, Long postId) {
+    public void deleteLike(Long userId, Long postId) {
 postRepository.deleteLike(userId, postId);
     }
 
@@ -43,24 +40,23 @@ postRepository.addLike(userId, postId);
     }
 
     @Override
-    public void save(PostEntity post) {
-        postRepository.save(post);
-    }
-
-
-
-    @Override
-    public void findByPostById(Long postId) {
-postRepository.findById(postId).orElseThrow(()-> new RuntimeException("Can not find post with given by id"));
+    public PostEntity save(PostEntity post) {
+        return postRepository.save(post);
     }
 
     @Override
-    public void deletePost(PostEntity post) {
-postRepository.delete(post);
+    public void findById(Long postId) {
+        postRepository.findById(postId).
+                orElseThrow(()-> new RuntimeException("Can not find post with given by id"));
     }
 
     @Override
-    public List<PostEntity> getAllPosts() {
+    public void deleteById(Long id) {
+postRepository.deleteById(id);
+    }
+
+    @Override
+    public List<PostEntity> findAll() {
         return postRepository.findAll();
     }
 

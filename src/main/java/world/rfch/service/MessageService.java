@@ -8,13 +8,16 @@ import java.util.List;
 
 @Service
 public interface MessageService {
+
     List<MessageEntity> findAllByReceiverUserAndSenderUserOrderByDateDesc
             (UserEntity senderUser, UserEntity receiverUser);
 
+    MessageEntity findById(Long id);
 
-MessageEntity findById(Long id);
+    MessageEntity save(MessageEntity messageEntity);
 
-void save(MessageEntity messageEntity);
-List<MessageEntity> findAllMessages();
+    void deleteById(Long id);
+
+    List<MessageEntity> findAll();
 
 }
