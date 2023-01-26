@@ -21,7 +21,7 @@ public interface PostService {
 
     PostEntity save(PostEntity post);
 
-    void findById(Long postId);
+    PostEntity findById(Long postId);
 
     void deleteById(Long id);
 

@@ -11,19 +11,13 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<UserEntity,Long> {
 
     Optional<UserEntity> findUserByNameAndSurname(String name, String surname);
-
     Optional<UserEntity> findUserByName(String name);
-
-    Optional<UserEntity> findUserBySurname(String surname);
-
+    Optional<UserEntity> findUserBySurname(String name);
     Optional<UserEntity> findUserByNameOrSurname(String name, String surname);
-
     Optional<UserEntity> findUserByEmail(String email);
-
     Optional<UserEntity> findUserByUsername(String username);
     @Query(value="SELECT EXISTS (SELECT 1 FROM friendship) WHERE user_id=:userId AND friend_id =:friendId)",
             nativeQuery = true)
-
     int isFriend(Long userId,Long friendId);
 
 }

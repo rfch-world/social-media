@@ -6,12 +6,12 @@ import world.rfch.exceptions.SocialMediaNotFoundException;
 import world.rfch.jpa.entity.SocialMediaEntity;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.SocialMediaRepository;
-import world.rfch.service.SocialMediaEntityService;
+import world.rfch.service.SocialMediaService;
 
 import java.util.List;
 
 @RequiredArgsConstructor
-public class SocialMediaServiceImpl implements SocialMediaEntityService {
+public class SocialMediaServiceImpl implements SocialMediaService {
 
     private final SocialMediaRepository socialMediaRepository;
 

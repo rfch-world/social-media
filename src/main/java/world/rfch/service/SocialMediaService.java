@@ -7,7 +7,7 @@ import world.rfch.jpa.entity.UserEntity;
 import java.util.List;
 
 @Service
-public interface SocialMediaEntityService {
+public interface SocialMediaService {
     List<SocialMediaEntity> findAllByUser(UserEntity userEntity);
 
     SocialMediaEntity save(SocialMediaEntity socialMediaEntity);
