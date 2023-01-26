@@ -1,9 +1,6 @@
 package world.rfch.jpa.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
@@ -15,10 +12,12 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Data
-@Builder
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@EqualsAndHashCode
 @Table(name = "user")
 public class UserEntity extends BaseEntity {
 

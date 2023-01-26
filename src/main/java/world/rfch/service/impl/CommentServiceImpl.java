@@ -7,9 +7,12 @@ import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.repository.CommentRepository;
 import world.rfch.service.CommentService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class CommentServiceImpl implements CommentService {
 
 private final CommentRepository commentRepository;

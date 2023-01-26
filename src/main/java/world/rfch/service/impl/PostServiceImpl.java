@@ -7,9 +7,12 @@ import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.repository.PostRepository;
 import world.rfch.service.PostService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class PostServiceImpl implements PostService {
 
     private final PostRepository postRepository;

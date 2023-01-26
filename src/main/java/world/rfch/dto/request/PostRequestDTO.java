@@ -3,7 +3,6 @@ package world.rfch.dto.request;
 import com.sun.istack.NotNull;
 import lombok.*;
 import world.rfch.enums.PostStatus;
-import world.rfch.jpa.entity.CommentEntity;
 import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.service.PostService;
@@ -16,7 +15,7 @@ import java.util.List;
 
 @Builder
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class PostRequestDTO {
 
     private final UserService userService;

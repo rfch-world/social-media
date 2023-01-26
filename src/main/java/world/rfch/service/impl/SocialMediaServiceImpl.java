@@ -1,14 +1,18 @@
 package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import world.rfch.jpa.entity.SocialMediaEntity;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.SocialMediaRepository;
 import world.rfch.service.SocialMediaService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class SocialMediaServiceImpl implements SocialMediaService {
 
     private final SocialMediaRepository socialMediaRepository;
