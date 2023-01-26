@@ -2,6 +2,7 @@ package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import world.rfch.exceptions.CommentNotFoundException;
 import world.rfch.jpa.entity.CommentEntity;
 import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.repository.CommentRepository;
@@ -51,7 +52,7 @@ commentRepository.deleteById(id);
     @Override
     public CommentEntity findById(Long commentId) {
      CommentEntity commentEntity=commentRepository.findById(commentId).
-             orElseThrow(()->new RuntimeException("can not find comment with given commentid"));
+             orElseThrow(()->new CommentNotFoundException("can not find comment with given commentid"));
      return commentEntity;
     }
 

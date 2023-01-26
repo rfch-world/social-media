@@ -2,6 +2,7 @@ package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import world.rfch.exceptions.UserNotFoundException;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.UserRepository;
 import world.rfch.service.UserService;
@@ -65,7 +66,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity findById(Long userId) {
         return userRepository.findById(userId).
-                orElseThrow(()->new RuntimeException("can not find user with given id"));
+                orElseThrow(()->new UserNotFoundException("can not find user with given id"));
     }
 
     @Override

@@ -2,6 +2,7 @@ package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import world.rfch.exceptions.SocialMediaNotFoundException;
 import world.rfch.jpa.entity.SocialMediaEntity;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.SocialMediaRepository;
@@ -35,6 +36,6 @@ socialMediaRepository.deleteById(id);
     @Override
     public SocialMediaEntity findById(Long id) {
         return socialMediaRepository.findById(id).
-                orElseThrow(()->new RuntimeException("can not find social media with given id"));
+                orElseThrow(()->new SocialMediaNotFoundException("can not find social media with given id"));
     }
 }
