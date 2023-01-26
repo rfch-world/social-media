@@ -13,6 +13,7 @@ import java.math.BigInteger;
 import java.util.List;
 
 @Repository
+@Transactional
 public interface CommentRepository extends JpaRepository<CommentEntity,Long> {
 
     List<CommentEntity> findAllByPostOrderByLikeCount(PostEntity post);

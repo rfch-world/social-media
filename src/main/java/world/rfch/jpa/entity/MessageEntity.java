@@ -1,5 +1,6 @@
 package world.rfch.jpa.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,6 +9,7 @@ import java.util.Date;
 
 @Entity
 @Data
+@Builder
 @Table(name = "message")
 @NoArgsConstructor
 public class MessageEntity extends BaseEntity {
