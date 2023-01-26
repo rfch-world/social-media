@@ -1,19 +1,20 @@
 package world.rfch.dto.request;
 
 import com.sun.istack.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import world.rfch.jpa.entity.CommentEntity;
+import world.rfch.jpa.entity.MessageEntity;
+import world.rfch.service.UserService;
 
 import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 @Builder
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class MessageRequestDTO {
+
+    private final UserService userService;
 
     @NotNull
     private Long senderUserId;
@@ -26,5 +27,14 @@ public class MessageRequestDTO {
 
     @NotNull
     private Date date;
+
+    public MessageEntity toEntity(){
+        return MessageEntity.builder()
+                .senderUser(userService.findById(this.senderUserId))
+                .receiverUser(userService.findById(this.receiverUserId))
+                .content(this.content)
+                .date(this.date)
+                .build();
+    }
 
 }

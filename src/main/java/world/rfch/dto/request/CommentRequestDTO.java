@@ -2,6 +2,8 @@ package world.rfch.dto.request;
 
 import lombok.*;
 import world.rfch.jpa.entity.CommentEntity;
+import world.rfch.service.PostService;
+import world.rfch.service.UserService;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -11,6 +13,9 @@ import java.util.Date;
 @Data
 @RequiredArgsConstructor
 public class CommentRequestDTO {
+
+    private final UserService userService;
+    private final PostService postService;
 
     @NotBlank
     private String content;
@@ -24,13 +29,12 @@ public class CommentRequestDTO {
     @NotNull
     private Date date;
 
-    /*public CommentEntity toEntity(){
+    public CommentEntity toEntity(){
         return CommentEntity.builder()
                 .content(this.content)
-                .userId(this.name)
-                .surname(this.surname)
-                .email(this.email)
-                .password(this.password)
+                .user(userService.findById(this.userId))
+                .post(postService.findById(this.postId))
+                .date(this.date)
                 .build();
-    }*/
+    }
 }

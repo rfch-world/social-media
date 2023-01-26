@@ -1,21 +1,26 @@
 package world.rfch.dto.request;
 
 import com.sun.istack.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import world.rfch.enums.PostStatus;
+import world.rfch.jpa.entity.CommentEntity;
+import world.rfch.jpa.entity.PostEntity;
+import world.rfch.jpa.entity.UserEntity;
+import world.rfch.service.PostService;
+import world.rfch.service.UserService;
 
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Builder
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PostRequestDTO {
+
+    private final UserService userService;
+    private final PostService postService;
 
     @NotNull
     private Long userId;
@@ -31,6 +36,21 @@ public class PostRequestDTO {
     @NotNull
     private PostStatus status;
 
-    List<UserRequestDTO> taggedUserList;
+    List<Long> taggedUserIdList;
+
+    public PostEntity toEntity(){
+        List<UserEntity> taggedUserEntityList = new ArrayList<>();
+        for(Long a : taggedUserIdList){
+            taggedUserEntityList.add(userService.findById(a));
+        }
+        return PostEntity.builder()
+                .user(userService.findById(this.userId))
+                .content(this.content)
+                .date(this.date)
+                .source(this.source)
+                .status(this.status)
+                .taggedUserList(taggedUserEntityList)
+                .build();
+    }
 
 }
