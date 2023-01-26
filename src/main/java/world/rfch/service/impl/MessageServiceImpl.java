@@ -2,6 +2,7 @@ package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import world.rfch.exceptions.notfound.MessageNotFoundException;
 import world.rfch.jpa.entity.MessageEntity;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.MessageRepository;
@@ -25,8 +26,8 @@ public class MessageServiceImpl implements MessageService {
 
     @Override
     public MessageEntity findById(Long id) {
-        return messageRepository.findById(id).
-                orElseThrow(() -> new RuntimeException("can not find message with given id"));
+        return messageRepository.findById(id)
+                .orElseThrow(() -> new MessageNotFoundException("Can't find message with given id"));
     }
 
     @Override
