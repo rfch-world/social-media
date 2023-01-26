@@ -6,7 +6,6 @@ import world.rfch.jpa.entity.UserEntity;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public interface UserService {
     Optional<UserEntity> findUserByNameAndSurname(String name, String surname);
 

@@ -7,9 +7,12 @@ import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.repository.PostRepository;
 import world.rfch.service.PostService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class PostServiceImpl implements PostService {
 
     private final PostRepository postRepository;
@@ -45,8 +48,8 @@ postRepository.addLike(userId, postId);
     }
 
     @Override
-    public void findById(Long postId) {
-        postRepository.findById(postId).
+    public PostEntity findById(Long postId) {
+        return postRepository.findById(postId).
                 orElseThrow(()-> new RuntimeException("Can not find post with given by id"));
     }
 

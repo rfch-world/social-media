@@ -6,7 +6,6 @@ import world.rfch.jpa.entity.UserEntity;
 
 import java.util.List;
 
-@Service
 public interface MessageService {
 
     List<MessageEntity> findAllByReceiverUserAndSenderUserOrderByDateDesc

@@ -7,7 +7,6 @@ import world.rfch.enums.PostStatus;
 import world.rfch.jpa.entity.PostEntity;
 
 import java.util.List;
-@Service
 public interface PostService {
     List<PostEntity> findAllByOrderByLikeCountDescDate();
 
@@ -21,7 +20,7 @@ public interface PostService {
 
     PostEntity save(PostEntity post);
 
-    void findById(Long postId);
+    PostEntity findById(Long postId);
 
     void deleteById(Long id);
 
