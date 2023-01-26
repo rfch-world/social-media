@@ -1,4 +1,4 @@
-package world.rfch.exceptions;
+package world.rfch.exceptions.dto;
 
 
 import lombok.AccessLevel;
