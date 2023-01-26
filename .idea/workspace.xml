@@ -3,33 +3,85 @@
   <component name="ChangeListManager">
     <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/SocialMediaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/SocialMediaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/CommentRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/CommentRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/MessageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/MessageRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/PostRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/PostRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/response/CommentResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/response/MessageResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/response/PostResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/dto/response/UserResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/MessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/MessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/PostEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/PostEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/SocialMediaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/SocialMediaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/SocialMediaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/SocialMediaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/account-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/account-setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/email-compose.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/email-compose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/event-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/event-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/group-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/group-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/privacy-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/privacy-setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-forum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-images.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile-videos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile-videos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/app/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/app/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/birthday.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/birthday.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/blog-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/data-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/data-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-chechbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-chechbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-switch.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-switch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard-validate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard-validate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard-vertical.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard-vertical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/friend-request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-fontawesome-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-fontawesome-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-lineawesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-lineawesome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-remixicon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/icon-remixicon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-pricing-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-pricing-one.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/pages-timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-category-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-category-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-category-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-category-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/store-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/table-editable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/table-editable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/tables-basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/tables-basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/terms-of-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/terms-of-service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-alerts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-breadcrumb.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-breadcrumb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-cards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-color.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-color.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-dropdowns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-embed-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-embed-video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-images.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-list-group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-offcanvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-offcanvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-popovers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-popovers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-progressbars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-progressbars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-tooltips.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-tooltips.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/ui-typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/weather.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/dashboard/without-rightside.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/dashboard/without-rightside.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +97,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\social-media\src\main\resources\template" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
