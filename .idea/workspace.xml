@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/SocialMediaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/UnauthorizedEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/mapper/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/AuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/EmailAlreadyUsedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/InvalidStateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/AuthorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/AccessTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/RegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-common.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-db.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/SocialMediaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/PostStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/social-media.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -30,44 +60,74 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2KbQKTPYUv9AnPxAELvlo2qYsEj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/vugarbakhishli/Desktop/social-media/src/main/java/world/rfch/security",
+    "spring.configuration.checksum": "ce67d70bf82195f7f8543c35e39ff34f"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="world.rfch.service.dto" />
+      <recent name="world.rfch.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/world/rfch/security" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="world.rfch.web.rest" />
+      <recent name="world.rfch.exceptions" />
+      <recent name="world.rfch.config.mapper" />
+      <recent name="world.rfch.service.dto" />
+      <recent name="world.rfch.jpa.repository" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="SocialMediaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="social-media" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="world.rfch.SocialMediaApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="world.rfch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="world.rfch.SocialMediaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,6 +138,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -90,11 +151,13 @@
       <updated>1674240738874</updated>
       <workItem from="1674240744283" duration="2171000" />
       <workItem from="1674540593955" duration="4947000" />
+      <workItem from="1674553120559" duration="3821000" />
+      <workItem from="1674720435225" duration="26407000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
