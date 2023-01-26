@@ -1,6 +1,7 @@
 package world.rfch.dto.request;
 
 import lombok.*;
+import org.apache.catalina.User;
 import world.rfch.jpa.entity.CommentEntity;
 import world.rfch.service.PostService;
 import world.rfch.service.UserService;
@@ -11,7 +12,7 @@ import java.util.Date;
 
 @Builder
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class CommentRequestDTO {
 
     private final UserService userService;

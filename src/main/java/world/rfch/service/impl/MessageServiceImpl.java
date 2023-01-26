@@ -8,9 +8,12 @@ import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.MessageRepository;
 import world.rfch.service.MessageService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class MessageServiceImpl implements MessageService {
 
     private  final MessageRepository messageRepository;

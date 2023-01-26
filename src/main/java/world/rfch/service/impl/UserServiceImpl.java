@@ -7,10 +7,13 @@ import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.UserRepository;
 import world.rfch.service.UserService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
+@Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;

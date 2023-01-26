@@ -7,7 +7,6 @@ import world.rfch.enums.PostStatus;
 import world.rfch.jpa.entity.PostEntity;
 
 import java.util.List;
-@Service
 public interface PostService {
     List<PostEntity> findAllByOrderByLikeCountDescDate();
 

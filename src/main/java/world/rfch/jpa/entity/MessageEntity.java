@@ -1,17 +1,18 @@
 package world.rfch.jpa.entity;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
-@Builder
-@Table(name = "message")
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@EqualsAndHashCode
+@Table(name = "message")
 public class MessageEntity extends BaseEntity {
 
     @ManyToOne

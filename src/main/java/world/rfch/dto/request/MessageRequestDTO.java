@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Builder
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class MessageRequestDTO {
 
     private final UserService userService;

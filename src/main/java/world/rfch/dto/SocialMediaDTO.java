@@ -1,12 +1,13 @@
 package world.rfch.dto;
 
+import com.sun.istack.NotNull;
 import lombok.*;
 import world.rfch.jpa.entity.SocialMediaEntity;
 import world.rfch.service.UserService;
 
 @Data
 @Builder
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class SocialMediaDTO {
 
     private final UserService userService;
