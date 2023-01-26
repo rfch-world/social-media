@@ -2,14 +2,13 @@ package world.rfch.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import world.rfch.exceptions.UserNotFoundException;
+import world.rfch.exceptions.notfound.UserNotFoundException;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.UserRepository;
 import world.rfch.service.UserService;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
@@ -19,33 +18,35 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public Optional<UserEntity> findUserByNameAndSurname(String name, String surname) {
+    public List<UserEntity> findUserByNameAndSurname(String name, String surname) {
         return userRepository.findUserByNameAndSurname(name,surname);
     }
 
     @Override
-    public Optional<UserEntity> findUserByName(String name) {
+    public List<UserEntity> findUserByName(String name) {
         return userRepository.findUserByName(name);
     }
 
     @Override
-    public Optional<UserEntity> findUserBySurname(String surname) {
+    public List<UserEntity> findUserBySurname(String surname) {
         return userRepository.findUserBySurname(surname);
     }
 
     @Override
-    public Optional<UserEntity> findUserByNameOrSurname(String name, String surname) {
+    public List<UserEntity> findUserByNameOrSurname(String name, String surname) {
         return userRepository.findUserByNameOrSurname(name, surname);
     }
 
     @Override
-    public Optional<UserEntity> findUserByEmail(String email) {
-        return userRepository.findUserByEmail(email);
+    public UserEntity findUserByEmail(String email) {
+        return userRepository.findUserByEmail(email)
+                .orElseThrow(()->new UserNotFoundException("Can't find user with given email"));
     }
 
     @Override
-    public Optional<UserEntity> findUserByUsername(String username) {
-        return userRepository.findUserByUsername(username);
+    public UserEntity findUserByUsername(String username) {
+        return userRepository.findUserByUsername(username)
+                .orElseThrow(()->new UserNotFoundException("Can't find user with given username"));
     }
 
     @Override
@@ -65,8 +66,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity findById(Long userId) {
-        return userRepository.findById(userId).
-                orElseThrow(()->new UserNotFoundException("can not find user with given id"));
+        return userRepository.findById(userId)
+                .orElseThrow(()->new UserNotFoundException("Can't find user with given id"));
     }
 
     @Override

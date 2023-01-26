@@ -3,7 +3,7 @@ package world.rfch.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import world.rfch.enums.PostStatus;
-import world.rfch.exceptions.PostNotFoundException;
+import world.rfch.exceptions.notfound.PostNotFoundException;
 import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.repository.PostRepository;
 import world.rfch.service.PostService;
@@ -50,8 +50,8 @@ postRepository.addLike(userId, postId);
 
     @Override
     public PostEntity findById(Long postId) {
-        return postRepository.findById(postId).
-                orElseThrow(()-> new PostNotFoundException("Can not find post with given by id"));
+        return postRepository.findById(postId)
+                .orElseThrow(()-> new PostNotFoundException("Can't find post with given id"));
     }
 
     @Override
