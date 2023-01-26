@@ -45,8 +45,8 @@ postRepository.addLike(userId, postId);
     }
 
     @Override
-    public void findById(Long postId) {
-        postRepository.findById(postId).
+    public PostEntity findById(Long postId) {
+        return postRepository.findById(postId).
                 orElseThrow(()-> new RuntimeException("Can not find post with given by id"));
     }
 
