@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import world.rfch.exceptions.EmailAlreadyUsedException;
+import world.rfch.exceptions.notfound.UserNotFoundException;
 import world.rfch.jpa.entity.Authority;
 import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.AuthorityRepository;
@@ -81,7 +82,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity findUserByEmail(String email) {
-        return userRepository.findUserByEmail(email)
+        return userRepository.findByEmail(email)
                 .orElseThrow(()->new UserNotFoundException("Can't find user with given email"));
     }
 

@@ -1,13 +1,13 @@
 package world.rfch.jpa.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
-@Data
+@Getter
+@Setter
+@Builder
 @Table(name = "user_social_media")
 @AllArgsConstructor
 @NoArgsConstructor

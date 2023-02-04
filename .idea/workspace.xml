@@ -5,47 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/SocialMediaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/CommentRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/MessageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/PostRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/request/UserRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/dto/ErrorResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/CommentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/MessageNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/PostNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/SocialMediaNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/notfound/handler/NotFoundExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/SocialMediaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/SocialMediaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/AccessTokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/AccessTokenDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/LoginDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/RegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/RegistrationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/MessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/MessageEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/PostEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/PostEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/SocialMediaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-utilities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/libs.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.symbol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.symbol.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/bodymovin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/bodymovin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/charts/weather-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/charts/weather-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/countdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/enchanter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/enchanter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/jquery.counterup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/libs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/libs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/lottie.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/lottie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/masonry.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/masonry.pkgd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/raphael-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/raphael-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/smooth-scrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/smooth-scrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/sweetalert.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/sweetalert.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +151,7 @@
       <workItem from="1674540593955" duration="4947000" />
       <workItem from="1674553120559" duration="3821000" />
       <workItem from="1674720435225" duration="26407000" />
-      <workItem from="1675499691205" duration="2447000" />
+      <workItem from="1675499691205" duration="4121000" />
     </task>
     <servers />
   </component>
