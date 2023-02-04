@@ -2,7 +2,6 @@ package world.rfch.web.rest;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import world.rfch.config.TokenProvider;
 import world.rfch.service.UserService;
-import world.rfch.service.dto.AccessTokenDto;
-import world.rfch.service.dto.LoginDto;
-import world.rfch.service.dto.RegistrationDto;
+import world.rfch.dto.AccessTokenDto;
+import world.rfch.dto.LoginDto;
+import world.rfch.dto.RegistrationDto;
 
 import java.time.Duration;
 

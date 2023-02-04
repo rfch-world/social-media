@@ -5,44 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1c393d-aa0f-44ed-9aff-aa959d09bc3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/CORSFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/TokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/UnauthorizedEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/config/mapper/ModelMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/AuthProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/enums/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/EmailAlreadyUsedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/exceptions/InvalidStateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/AuthorityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/AccessTokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/LoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/RegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-common.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-db.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/jpa/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/social-media.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/AccessTokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/AccessTokenDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/dto/RegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/dto/RegistrationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/web/rest/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/bootstrap/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/css/libs.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/line-awsome/la-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.symbol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/fonts/remixicon/remixicon.symbol.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/bodymovin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/bodymovin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/charts/weather-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/charts/weather-chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/countdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/enchanter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/enchanter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/jquery.counterup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/libs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/libs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/lottie.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/lottie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/masonry.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/masonry.pkgd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/raphael-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/raphael-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/select2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/smooth-scrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/smooth-scrollbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/sweetalert.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/sweetalert.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,20 +92,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/vugarbakhishli/Desktop/social-media/src/main/java/world/rfch/security",
-    "spring.configuration.checksum": "ce67d70bf82195f7f8543c35e39ff34f"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="world.rfch.service.dto" />
@@ -118,16 +118,28 @@
       <recent name="world.rfch.jpa.repository" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="SocialMediaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="social-media" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="world.rfch.SocialMediaApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="world.rfch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="world.rfch.SocialMediaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,7 +150,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -153,18 +165,21 @@
       <workItem from="1674540593955" duration="4947000" />
       <workItem from="1674553120559" duration="3821000" />
       <workItem from="1674720435225" duration="26407000" />
+      <workItem from="1675499691205" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

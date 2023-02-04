@@ -1,4 +1,4 @@
-package world.rfch.service.dto;
+package world.rfch.dto;
 
 import lombok.Data;
 import lombok.ToString;
