@@ -1,19 +1,22 @@
 package world.rfch.jpa.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Table(name = "comment")
 public class CommentEntity extends BaseEntity {
+
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "content")
     private String content;

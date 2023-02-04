@@ -1,6 +1,8 @@
 package world.rfch.jpa.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import world.rfch.enums.PostStatus;
 
 import javax.persistence.*;
@@ -8,12 +10,9 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@EqualsAndHashCode
 @Table(name = "post")
 public class PostEntity extends BaseEntity {
 

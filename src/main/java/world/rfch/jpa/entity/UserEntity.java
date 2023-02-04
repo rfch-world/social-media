@@ -1,12 +1,5 @@
 package world.rfch.jpa.entity;
 
-<<<<<<< HEAD
-import lombok.*;
-||||||| 93634b7
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-=======
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +9,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.annotations.BatchSize;
->>>>>>> feature/authentication
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
@@ -38,20 +30,11 @@ import java.util.Set;
 import static javax.persistence.EnumType.STRING;
 
 @Entity
-<<<<<<< HEAD
-@Getter
-@Setter
-||||||| 93634b7
-@Data
-=======
 @Getter
 @Setter
 @Builder
->>>>>>> feature/authentication
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@EqualsAndHashCode
 @Table(name = "user")
 public class UserEntity implements UserDetails {
 

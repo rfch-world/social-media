@@ -1,15 +1,11 @@
 package world.rfch.jpa.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
 @MappedSuperclass
+@Data
 public abstract class BaseEntity {
 
     @Id
