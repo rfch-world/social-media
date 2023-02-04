@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserEntity,Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
     List<UserEntity> findUserByNameAndSurname(String name, String surname);
     List<UserEntity> findUserByName(String name);
@@ -17,6 +17,7 @@ public interface UserRepository extends JpaRepository<UserEntity,Long> {
     List<UserEntity> findUserByNameOrSurname(String name, String surname);
     Optional<UserEntity> findUserByEmail(String email);
     Optional<UserEntity> findUserByUsername(String username);
+    Optional<UserEntity> findByEmail(String email);
     @Query(value="SELECT EXISTS (SELECT 1 FROM friendship) WHERE user_id=:userId AND friend_id =:friendId)",
             nativeQuery = true)
     int isFriend(Long userId,Long friendId);

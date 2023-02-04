@@ -1,0 +1,13 @@
+spring.jpa:
+  database: MYSQL
+  hibernate.ddl-auto: create-drop
+  show-sql: true
+
+spring.datasource:
+  url: jdbc:mysql://localhost:3306/social-media?useUnicode=yes&characterEncoding=UTF-8
+  username: root
+  password:
+spring:
+  datasource:
+    platform: org.hibernate.dialect.MySQL8Dialect
+#TODO: Change it later `update` to `validate`
