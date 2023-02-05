@@ -4,17 +4,18 @@ import world.rfch.dto.RegistrationDto;
 import world.rfch.jpa.entity.UserEntity;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
     void register(RegistrationDto dto);
 
-    List<UserEntity> findUserByNameAndSurname(String name, String surname);
+    Optional<UserEntity> findUserByNameAndSurname(String name, String surname);
 
-    List<UserEntity> findUserByName(String name);
+    Optional<UserEntity> findUserByName(String name);
 
-    List<UserEntity> findUserBySurname(String surname);
+    Optional<UserEntity> findUserBySurname(String surname);
 
-    List<UserEntity> findUserByNameOrSurname(String name, String surname);
+    Optional<UserEntity> findUserByNameOrSurname(String name, String surname);
 
     UserEntity findUserByEmail(String email);
 

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd73e3f2-78d8-4629-a38b-d4861042f7a3" name="Changes" comment="" />
+    <list default="true" id="fd73e3f2-78d8-4629-a38b-d4861042f7a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/rfch/service/impl/UserServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

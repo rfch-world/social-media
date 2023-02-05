@@ -15,6 +15,7 @@ import world.rfch.dto.RegistrationDto;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import static world.rfch.enums.UserRole.ROLE_USER;
@@ -60,35 +61,35 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserEntity> findUserByNameAndSurname(String name, String surname) {
+    public Optional<UserEntity> findUserByNameAndSurname(String name, String surname) {
         return userRepository.findUserByNameAndSurname(name,surname);
     }
 
     @Override
-    public List<UserEntity> findUserByName(String name) {
+    public Optional<UserEntity> findUserByName(String name) {
         return userRepository.findUserByName(name);
     }
 
     @Override
-    public List<UserEntity> findUserBySurname(String surname) {
+    public Optional<UserEntity> findUserBySurname(String surname) {
         return userRepository.findUserBySurname(surname);
     }
 
     @Override
-    public List<UserEntity> findUserByNameOrSurname(String name, String surname) {
+    public Optional<UserEntity> findUserByNameOrSurname(String name, String surname) {
         return userRepository.findUserByNameOrSurname(name, surname);
     }
 
     @Override
     public UserEntity findUserByEmail(String email) {
         return userRepository.findUserByEmail(email)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given email"));
+                .orElseThrow(()->new RuntimeException("Can't find user with given email"));
     }
 
     @Override
     public UserEntity findUserByUsername(String username) {
         return userRepository.findUserByUsername(username)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given username"));
+                .orElseThrow(()->new RuntimeException("Can't find user with given username"));
     }
 
     @Override
@@ -109,7 +110,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity findById(Long userId) {
         return userRepository.findById(userId)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given id"));
+                .orElseThrow(() -> new RuntimeException("Can't find user with given id"));
     }
 
     @Override
