@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SocialMedia
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+    include:
+      - common
+      - db
+      - security

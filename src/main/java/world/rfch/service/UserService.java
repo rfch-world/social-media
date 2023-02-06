@@ -1,12 +1,13 @@
 package world.rfch.service;
 
-import org.springframework.stereotype.Service;
+import world.rfch.dto.RegistrationDto;
 import world.rfch.jpa.entity.UserEntity;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
+    void register(RegistrationDto dto);
+
     List<UserEntity> findUserByNameAndSurname(String name, String surname);
 
     List<UserEntity> findUserByName(String name);
@@ -29,4 +30,3 @@ public interface UserService {
 
     void deleteById(Long id);
 }
-

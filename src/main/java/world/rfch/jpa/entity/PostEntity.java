@@ -10,10 +10,9 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@EqualsAndHashCode
 @Table(name = "post")
 public class PostEntity extends BaseEntity {
 

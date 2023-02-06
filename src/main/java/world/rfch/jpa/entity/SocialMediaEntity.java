@@ -7,12 +7,14 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
-@EqualsAndHashCode
 @Table(name = "user_social_media")
+@AllArgsConstructor
+@NoArgsConstructor
 public class SocialMediaEntity extends BaseEntity {
+
+    @Column(name = "id")
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

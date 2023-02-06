@@ -8,11 +8,10 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
+@Builder
+@Table(name = "message")
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-@EqualsAndHashCode
-@Table(name = "message")
 public class MessageEntity extends BaseEntity {
 
     @ManyToOne

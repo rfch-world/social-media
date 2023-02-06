@@ -9,11 +9,14 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Table(name = "comment")
 public class CommentEntity extends BaseEntity {
+
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "content")
     private String content;

@@ -14,6 +14,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Builder
@@ -75,7 +76,7 @@ public class UserRequestDTO {
     private String image;
 
     @NotNull
-    private Date registrationDate;
+    private LocalDateTime registrationDate;
 
     public UserEntity toEntity(){
         return UserEntity.builder()
