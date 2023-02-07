@@ -29,4 +29,5 @@ public interface UserService {
     UserEntity findById(Long userId);
 
     void deleteById(Long id);
+
 }

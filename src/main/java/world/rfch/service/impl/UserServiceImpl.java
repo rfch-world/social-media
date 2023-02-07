@@ -5,6 +5,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import world.rfch.dto.RegistrationDto;
 import world.rfch.exceptions.EmailAlreadyUsedException;
 import world.rfch.exceptions.notfound.UserNotFoundException;
 import world.rfch.jpa.entity.Authority;
@@ -12,10 +13,10 @@ import world.rfch.jpa.entity.UserEntity;
 import world.rfch.jpa.repository.AuthorityRepository;
 import world.rfch.jpa.repository.UserRepository;
 import world.rfch.service.UserService;
-import world.rfch.dto.RegistrationDto;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import static world.rfch.enums.UserRole.ROLE_USER;
@@ -62,7 +63,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserEntity> findUserByNameAndSurname(String name, String surname) {
-        return userRepository.findUserByNameAndSurname(name,surname);
+        return userRepository.findUserByNameAndSurname(name, surname);
     }
 
     @Override
@@ -83,13 +84,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity findUserByEmail(String email) {
         return userRepository.findByEmail(email)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given email"));
+                .orElseThrow(() -> new UserNotFoundException("Can't find user with given email"));
     }
 
     @Override
     public UserEntity findUserByUsername(String username) {
         return userRepository.findUserByUsername(username)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given username"));
+                .orElseThrow(() -> new UserNotFoundException("Can't find user with given username"));
     }
 
     @Override
@@ -110,11 +111,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity findById(Long userId) {
         return userRepository.findById(userId)
-                .orElseThrow(()->new UserNotFoundException("Can't find user with given id"));
+                .orElseThrow(() -> new UserNotFoundException("Can't find user with given id"));
     }
 
     @Override
     public void deleteById(Long id) {
         userRepository.deleteById(id);
     }
+
 }

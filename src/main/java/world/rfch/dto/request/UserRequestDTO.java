@@ -45,10 +45,10 @@ public class UserRequestDTO {
     @Size(min = 5, max = 25, message = "Password size must be between 3 and 25")
     private String password;
 
-    @NotBlank
+
     private String countryName;
 
-    @NotBlank
+
     private String cityName;
 
     private Gender gender;
@@ -59,24 +59,23 @@ public class UserRequestDTO {
 
     private MaritalStatus maritalStatus;
 
-    @NotBlank
+
     @Size(min = 3, max = 25, message = "Address size must be between 3 and 50")
     private String address;
 
-    @NotBlank
+
     @Size(min = 3, max = 25, message = "Contact Number size must be between 3 and 25")
     private String contactNumber;
 
     @Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}")
-    @NotBlank
     @Size(min = 11, max = 35, message = "Email size must be between 11 and 35")
     private String contactEmail;
 
-    @NotBlank
+
     private String image;
 
-    @NotNull
-    private LocalDateTime registrationDate;
+    private String URL;
+
 
     public UserEntity toEntity(){
         return UserEntity.builder()
@@ -94,7 +93,6 @@ public class UserRequestDTO {
                 .contactNumber(this.contactNumber)
                 .contactEmail(this.contactEmail)
                 .image(this.image)
-                .registrationDate(this.registrationDate)
                 .build();
     }
 
