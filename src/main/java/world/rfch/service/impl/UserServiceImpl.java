@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import world.rfch.dto.RegistrationDto;
+import world.rfch.dto.request.UserRequestDTO;
 import world.rfch.exceptions.EmailAlreadyUsedException;
 import world.rfch.exceptions.notfound.UserNotFoundException;
 import world.rfch.jpa.entity.Authority;
@@ -16,7 +17,6 @@ import world.rfch.service.UserService;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 
 import static world.rfch.enums.UserRole.ROLE_USER;
@@ -35,10 +35,9 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public void register(RegistrationDto dto) {
-        userRepository.findByEmail(dto.getEmail())
-                .ifPresent(user -> {
-                    throw new EmailAlreadyUsedException(dto.getEmail());
-                });
+        userRepository.findByEmail(dto.getEmail()).ifPresent(user -> {
+            throw new EmailAlreadyUsedException(dto.getEmail());
+        });
         UserEntity user = createUserEntity(dto);
         userRepository.save(user);
     }
@@ -46,9 +45,7 @@ public class UserServiceImpl implements UserService {
 
     private UserEntity createUserEntity(RegistrationDto dto) {
         UserEntity user = mapper.map(dto, UserEntity.class);
-        Authority authority = Authority.builder()
-                .authority(ROLE_USER.toString())
-                .build();
+        Authority authority = Authority.builder().authority(ROLE_USER.toString()).build();
         authorityRepository.save(authority);
         Set<Authority> userAuthority = new HashSet<>();
         userAuthority.add(authority);
@@ -83,14 +80,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity findUserByEmail(String email) {
-        return userRepository.findByEmail(email)
-                .orElseThrow(() -> new UserNotFoundException("Can't find user with given email"));
+        return userRepository.findByEmail(email).orElseThrow(() -> new UserNotFoundException("Can't find user with given email"));
     }
 
     @Override
     public UserEntity findUserByUsername(String username) {
-        return userRepository.findUserByUsername(username)
-                .orElseThrow(() -> new UserNotFoundException("Can't find user with given username"));
+        return userRepository.findUserByUsername(username).orElseThrow(() -> new UserNotFoundException("Can't find user with given username"));
     }
 
     @Override
@@ -104,14 +99,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public UserEntity save(UserRequestDTO userRequestDTO) {
+        UserEntity user = mapper.map(userRequestDTO, UserEntity.class);
+        return save(user);
+    }
+
+    @Override
     public List<UserEntity> findAll() {
         return userRepository.findAll();
     }
 
     @Override
     public UserEntity findById(Long userId) {
-        return userRepository.findById(userId)
-                .orElseThrow(() -> new UserNotFoundException("Can't find user with given id"));
+        return userRepository.findById(userId).orElseThrow(() -> new UserNotFoundException("Can't find user with given id"));
     }
 
     @Override

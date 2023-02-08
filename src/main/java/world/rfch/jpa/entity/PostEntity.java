@@ -14,7 +14,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "post")
-public class PostEntity extends BaseEntity {
+public class PostEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

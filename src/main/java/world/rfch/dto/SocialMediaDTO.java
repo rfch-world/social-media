@@ -1,6 +1,5 @@
 package world.rfch.dto;
 
-import com.sun.istack.NotNull;
 import lombok.*;
 import world.rfch.jpa.entity.SocialMediaEntity;
 import world.rfch.service.UserService;

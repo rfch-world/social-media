@@ -11,8 +11,10 @@ import javax.persistence.*;
 @Table(name = "user_social_media")
 @AllArgsConstructor
 @NoArgsConstructor
-public class SocialMediaEntity extends BaseEntity {
+public class SocialMediaEntity {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 

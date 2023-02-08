@@ -1,6 +1,8 @@
 package world.rfch.service;
 
+import org.springframework.ui.Model;
 import world.rfch.dto.RegistrationDto;
+import world.rfch.dto.request.UserRequestDTO;
 import world.rfch.jpa.entity.UserEntity;
 
 import java.util.List;
@@ -20,9 +22,11 @@ public interface UserService {
 
     UserEntity findUserByUsername(String username);
 
-    int isFriend(Long userId,Long friendId);
+    int isFriend(Long userId, Long friendId);
 
     UserEntity save(UserEntity user);
+
+    UserEntity save(UserRequestDTO userRequestDTO);
 
     List<UserEntity> findAll();
 

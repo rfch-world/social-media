@@ -1,7 +1,8 @@
 package world.rfch.dto.request;
 
-import lombok.*;
-import org.apache.catalina.User;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import world.rfch.jpa.entity.CommentEntity;
 import world.rfch.service.PostService;
 import world.rfch.service.UserService;
@@ -30,12 +31,7 @@ public class CommentRequestDTO {
     @NotNull
     private Date date;
 
-    public CommentEntity toEntity(){
-        return CommentEntity.builder()
-                .content(this.content)
-                .user(userService.findById(this.userId))
-                .post(postService.findById(this.postId))
-                .date(this.date)
-                .build();
+    public CommentEntity toEntity() {
+        return CommentEntity.builder().content(this.content).user(userService.findById(this.userId)).post(postService.findById(this.postId)).date(this.date).build();
     }
 }

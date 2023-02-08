@@ -2,7 +2,6 @@ package world.rfch.dto.request;
 
 import com.sun.istack.NotNull;
 import lombok.*;
-import world.rfch.jpa.entity.CommentEntity;
 import world.rfch.jpa.entity.MessageEntity;
 import world.rfch.service.UserService;
 

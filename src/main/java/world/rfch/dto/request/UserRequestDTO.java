@@ -1,10 +1,8 @@
 package world.rfch.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import world.rfch.enums.Gender;
 import world.rfch.enums.MaritalStatus;
@@ -12,9 +10,7 @@ import world.rfch.jpa.entity.UserEntity;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 @Builder
@@ -77,23 +73,8 @@ public class UserRequestDTO {
     private String URL;
 
 
-    public UserEntity toEntity(){
-        return UserEntity.builder()
-                .username(this.username)
-                .name(this.name)
-                .surname(this.surname)
-                .email(this.email)
-                .password(this.password)
-                .countryName(this.countryName)
-                .cityName(this.cityName)
-                .gender(this.gender)
-                .dateOfBirth(this.dateOfBirth)
-                .maritalStatus(this.maritalStatus)
-                .address(this.address)
-                .contactNumber(this.contactNumber)
-                .contactEmail(this.contactEmail)
-                .image(this.image)
-                .build();
+    public UserEntity toEntity() {
+        return UserEntity.builder().username(this.username).name(this.name).surname(this.surname).email(this.email).password(this.password).countryName(this.countryName).cityName(this.cityName).gender(this.gender).dateOfBirth(this.dateOfBirth).maritalStatus(this.maritalStatus).address(this.address).contactNumber(this.contactNumber).contactEmail(this.contactEmail).image(this.image).build();
     }
 
 

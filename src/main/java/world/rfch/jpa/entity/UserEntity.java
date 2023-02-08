@@ -1,18 +1,10 @@
 package world.rfch.jpa.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.BatchSize;
-import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import world.rfch.enums.AuthProvider;
 import world.rfch.enums.Gender;
@@ -20,12 +12,7 @@ import world.rfch.enums.MaritalStatus;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 import static javax.persistence.EnumType.STRING;
 
@@ -40,6 +27,7 @@ public class UserEntity implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "username")
@@ -117,13 +105,10 @@ public class UserEntity implements UserDetails {
     private boolean enabled;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "follow",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "follower_id"))
+    @JoinTable(name = "follow", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "follower_id"))
     private List<UserEntity> followedUserList;
 
-    @ManyToMany(mappedBy = "followedUserList",fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "followedUserList", fetch = FetchType.EAGER)
     private List<UserEntity> followerUserList;
 
     @LazyCollection(LazyCollectionOption.FALSE)
@@ -136,18 +121,12 @@ public class UserEntity implements UserDetails {
 
     @ManyToMany
     @LazyCollection(LazyCollectionOption.FALSE)
-    @JoinTable(
-            name = "friendship",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "friend_id"))
+    @JoinTable(name = "friendship", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "friend_id"))
     private List<UserEntity> friendList;
 
     @ManyToMany
     @LazyCollection(LazyCollectionOption.FALSE)
-    @JoinTable(
-            name = "friend_request",
-            joinColumns = @JoinColumn(name = "sender_id"),
-            inverseJoinColumns = @JoinColumn(name = "receiver_id"))
+    @JoinTable(name = "friend_request", joinColumns = @JoinColumn(name = "sender_id"), inverseJoinColumns = @JoinColumn(name = "receiver_id"))
     private List<UserEntity> sentFriendRequests;
 
     @ManyToMany(mappedBy = "sentFriendRequests")
@@ -156,18 +135,12 @@ public class UserEntity implements UserDetails {
 
     @ManyToMany
     @LazyCollection(LazyCollectionOption.FALSE)
-    @JoinTable(
-            name = "post_tag",
-            joinColumns = @JoinColumn(name = "post_id"),
-            inverseJoinColumns = @JoinColumn(name = "tagged_user_id"))
+    @JoinTable(name = "post_tag", joinColumns = @JoinColumn(name = "post_id"), inverseJoinColumns = @JoinColumn(name = "tagged_user_id"))
     private List<PostEntity> postListThatUserIsTaggedIn;
 
     @ManyToMany
     @LazyCollection(LazyCollectionOption.FALSE)
-    @JoinTable(
-            name = "post_like",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "liked_post_id"))
+    @JoinTable(name = "post_like", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "liked_post_id"))
     private List<PostEntity> likedPostList;
 
     @OneToMany(mappedBy = "user")
@@ -180,10 +153,7 @@ public class UserEntity implements UserDetails {
 
     @ManyToMany
     @LazyCollection(LazyCollectionOption.FALSE)
-    @JoinTable(
-            name = "comment_like",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "comment_id"))
+    @JoinTable(name = "comment_like", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "comment_id"))
     private List<CommentEntity> likedCommentList;
 
     @OneToMany(mappedBy = "user")
@@ -192,10 +162,7 @@ public class UserEntity implements UserDetails {
 
     @JsonIgnore
     @ManyToMany
-    @JoinTable(
-            name = "user_authorities",
-            joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "authority_id", referencedColumnName = "id")})
+    @JoinTable(name = "user_authorities", joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "authority_id", referencedColumnName = "id")})
     @BatchSize(size = 20)
     @Builder.Default
     @ToString.Exclude

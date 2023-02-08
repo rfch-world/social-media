@@ -12,7 +12,13 @@ import java.util.Date;
 @Table(name = "message")
 @NoArgsConstructor
 @AllArgsConstructor
-public class MessageEntity extends BaseEntity {
+public class MessageEntity {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "sender_id")

@@ -1,7 +1,9 @@
 package world.rfch.dto.request;
 
 import com.sun.istack.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import world.rfch.enums.PostStatus;
 import world.rfch.jpa.entity.PostEntity;
 import world.rfch.jpa.entity.UserEntity;
@@ -20,36 +22,23 @@ public class PostRequestDTO {
 
     private final UserService userService;
     private final PostService postService;
-
+    List<Long> taggedUserIdList;
     @NotNull
     private Long userId;
-
     @NotBlank(message = "Please fill the all field")
     private String content;
-
     private Date date;
-
     @NotBlank
     private String source;
-
     @NotNull
     private PostStatus status;
 
-    List<Long> taggedUserIdList;
-
-    public PostEntity toEntity(){
+    public PostEntity toEntity() {
         List<UserEntity> taggedUserEntityList = new ArrayList<>();
-        for(Long a : taggedUserIdList){
+        for (Long a : taggedUserIdList) {
             taggedUserEntityList.add(userService.findById(a));
         }
-        return PostEntity.builder()
-                .user(userService.findById(this.userId))
-                .content(this.content)
-                .date(this.date)
-                .source(this.source)
-                .status(this.status)
-                .taggedUserList(taggedUserEntityList)
-                .build();
+        return PostEntity.builder().user(userService.findById(this.userId)).content(this.content).date(this.date).source(this.source).status(this.status).taggedUserList(taggedUserEntityList).build();
     }
 
 }
