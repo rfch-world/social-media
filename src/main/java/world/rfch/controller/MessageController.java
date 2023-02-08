@@ -16,14 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/message")
+@RequestMapping(name="/api/v1/messages")
 @RequiredArgsConstructor
 public class MessageController {
     private final MessageServiceImpl messageServiceImpl;
 
-    @GetMapping
-    public ResponseEntity<List<MessageResponseDto>> findAllByReceiverUserAndSenderUserOrderByDateDesc(@RequestParam UserEntity senderUser, @RequestParam UserEntity receiverUser) {
-        List<MessageEntity> messageEntities = messageServiceImpl.findAllByReceiverUserAndSenderUserOrderByDateDesc(senderUser, receiverUser);
+    @GetMapping("/find/all")
+    public ResponseEntity<List<MessageResponseDto>> findAllByReceiverUserAndSenderUserOrderByDateDesc(@RequestParam
+                                                                                                          UserEntity senderUser,
+                                                                                                      @RequestParam UserEntity
+                                                                                                              receiverUser) {
+        List<MessageEntity> messageEntities = messageServiceImpl.findAllByReceiverUserAndSenderUserOrderByDateDesc(
+                senderUser, receiverUser);
 
 
         return ResponseEntity.ok(getList(messageEntities));

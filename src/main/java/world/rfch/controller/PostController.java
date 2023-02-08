@@ -22,7 +22,7 @@ public class PostController {
 
 private final PostServiceImpl postServiceImpl;
 
-@DeleteMapping("/delete/{userId}/{postId} ")
+@DeleteMapping("/delete/{userId}/{postId}")
    public ResponseEntity<Void> deleteById(@PathVariable Long userId,@PathVariable Long postId ){
    try {
        postServiceImpl.deleteLike(userId,postId);
@@ -97,7 +97,7 @@ return ResponseEntity.ok(ResponseDto.builder().
 
 }
 
-@GetMapping
+@GetMapping("/get/all/posts")
     public ResponseEntity<List<PostResponseDto>> findAll(){
     List<PostEntity> postEntities=postServiceImpl.findAll();
     List<PostResponseDto> postResponseDtos=new ArrayList<>();
@@ -116,7 +116,7 @@ return ResponseEntity.ok(ResponseDto.builder().
     }
 return ResponseEntity.ok(postResponseDtos);
 }
-@DeleteMapping("/{userId}/{postId")
+@DeleteMapping("/{userId}/{postId}")
     public ResponseEntity<Void> deleteLike(@PathVariable ("userId") Long userId,@PathVariable("postId") Long postId){
     try {
         postServiceImpl.deleteLike(userId, postId);
@@ -125,7 +125,7 @@ return ResponseEntity.ok(postResponseDtos);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }
 }
-@GetMapping("/get/All")
+@GetMapping("/get/all")
 public ResponseEntity<List<PostResponseDto>> findAllByStatusOrderByLikeCountDescDate(@RequestParam PostStatus postStatus){
 List<PostEntity> postEntities=postServiceImpl.findAllByStatusOrderByLikeCountDescDate(postStatus);
 List<PostResponseDto> postResponseDtos=new ArrayList<>();

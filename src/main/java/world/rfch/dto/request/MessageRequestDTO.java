@@ -12,7 +12,7 @@ import java.util.Date;
 @Builder
 @Data
 @AllArgsConstructor
-public class MessageRequestDTO {
+public class    MessageRequestDTO {
 
     private final UserService userService;
 
