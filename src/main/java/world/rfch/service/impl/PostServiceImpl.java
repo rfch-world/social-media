@@ -40,7 +40,8 @@ postRepository.deleteLike(userId, postId);
 
     @Override
     public void addLike(Long userId, Long postId) {
-postRepository.addLike(userId, postId);
+
+        postRepository.addLike(userId, postId);
     }
 
     @Override
